@@ -16,6 +16,7 @@ namespace BigSchool.Models
         [StringLength(255)]
         public String Place { get; set; }
 
+        [Display(Name = "Thời gian")]
         public DateTime DateTime { get; set; }
 
         [Required]
