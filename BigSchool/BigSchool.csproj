@@ -178,9 +178,14 @@
     <Compile Include="Migrations\202107071703523_InitDatabase.Designer.cs">
       <DependentUpon>202107071703523_InitDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107080121362_AddAttendance.cs" />
+    <Compile Include="Migrations\202107080121362_AddAttendance.Designer.cs">
+      <DependentUpon>202107080121362_AddAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\AppUser.cs" />
@@ -268,6 +273,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202107071703523_InitDatabase.resx">
       <DependentUpon>202107071703523_InitDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107080121362_AddAttendance.resx">
+      <DependentUpon>202107080121362_AddAttendance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
