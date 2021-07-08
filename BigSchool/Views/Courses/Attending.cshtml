@@ -1,11 +1,11 @@
 ﻿@model BigSchool.ViewModels.CoursesViewModel
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Attending";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Danh sách các khoá học sắp diễn ra</h2>
+<h2>Danh sách các khoá học</h2>
 
 <ul class="course">
     @foreach (var course in Model.UpcommingCourses)
@@ -24,16 +24,12 @@
                     @course.Lecturer.Name
                     @if (Model.ShowAction)
                     {
-                        <button data-user-id="@course.LecturerId" class="btn btn-link btn-sm js-togegle-follow">Follow</button>
+                        <button data-user-id="@course.LecturerId" class="btn btn-default btn-sm js-togegle-follow">Follow</button>
                     }
 
                 </span>
                 <span class="category">
                     @course.Category.Name
-                    @if (Model.ShowAction)
-                    {
-                        <button data-course-id="@course.Id" class="btn btn-default btn-sm js-togegle-attendance">Going?</button>
-                    }
                 </span>
                 
 
