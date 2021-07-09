@@ -15,6 +15,7 @@ namespace BigSchool.Controllers.Api
         }
 
         [Authorize]
+        [HttpDelete]
         public IHttpActionResult Cancel(int id)
         {
             var userId = User.Identity.GetUserId();
