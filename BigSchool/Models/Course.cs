@@ -7,6 +7,8 @@ namespace BigSchool.Models
     {
         public int Id { get; set; }
 
+        public bool IsCanceled { get; set; }
+
         [Required]
         public String LecturerId { get; set; }
 

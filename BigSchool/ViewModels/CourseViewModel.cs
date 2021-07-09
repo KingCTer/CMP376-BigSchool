@@ -7,6 +7,8 @@ namespace BigSchool.ViewModels
 {
     public class CourseViewModel
     {
+        public int Id { get; set; }
+
         [Required(ErrorMessage = "Địa chỉ không được để trống")]
         [Display(Name = "Địa chỉ")]
         public String Place { get; set; }
@@ -26,6 +28,10 @@ namespace BigSchool.ViewModels
         public int Category { get; set; }
 
         public IEnumerable<Category> Categories { get; set; }
+
+        public string Heading { get; set; }
+
+        public string Action { get { return (Id != 0) ? "Update" : "Create"; } }
 
         public DateTime GetDateTime()
         {
