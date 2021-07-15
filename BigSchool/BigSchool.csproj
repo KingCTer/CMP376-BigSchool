@@ -205,6 +205,10 @@
     <Compile Include="Migrations\202107082356123_AddIsCanceledColumnToCourse.Designer.cs">
       <DependentUpon>202107082356123_AddIsCanceledColumnToCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107150051021_UpdateCourse.cs" />
+    <Compile Include="Migrations\202107150051021_UpdateCourse.Designer.cs">
+      <DependentUpon>202107150051021_UpdateCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -218,6 +222,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CoursesViewModel.cs" />
     <Compile Include="ViewModels\CourseViewModel.cs" />
+    <Compile Include="ViewModels\CourseVm.cs" />
     <Compile Include="ViewModels\FutureDate.cs" />
     <Compile Include="ViewModels\ValidTime.cs" />
   </ItemGroup>
@@ -287,6 +292,7 @@
     <Content Include="Views\Courses\Attending.cshtml" />
     <Content Include="Views\Courses\Mine.cshtml" />
     <Content Include="Views\Courses\Edit.cshtml" />
+    <Content Include="Views\Courses\Following.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -317,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107082356123_AddIsCanceledColumnToCourse.resx">
       <DependentUpon>202107082356123_AddIsCanceledColumnToCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107150051021_UpdateCourse.resx">
+      <DependentUpon>202107150051021_UpdateCourse.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
